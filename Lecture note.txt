@@ -110,3 +110,25 @@ Fragments
       </ul>
     </Fragment>
 
+
+the same effect we can achieve with empty <>, here react will take care adding the fragmnet tag
+
+ <>
+      <h1>Sample List</h1>
+      <ul className="list-group">
+        <li className="list-group-item">An item</li>
+        <li className="list-group-item">A second item</li>
+      </ul>
+    </>
+
+The == operator performs a loose equality comparison that performs type coercion if necessary to make the comparison possible.
+
+The === operator, on the other hand, performs a strict equality comparison that does not perform type coercion and requires the operands to have the same type (as well as the same value).
+const a = 10
+const b = true
+    a == b => false
+    a===b => false
+const c = 1
+    a == c => true
+    a === c => false
+
