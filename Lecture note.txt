@@ -1,0 +1,63 @@
+Creating a react app
+	* create react APP(CRA), Provided by react team
+	* Vite, faster, and smaller bundle size
+
+
+1- Installing vite
+	npm create vite@4.1.0 or vite@latest
+2- Create the project 
+	Specify the project name
+	Specify the framework
+	Specify the variant
+
+3- Run these commands
+	
+	cd hello_react
+  	npm install
+  	npm run dev
+
+Note: *.ts file repersent plain type script files
+		*.tsx file repersent react component file
+
+4- React using pascal casing for funcation naming
+
+Note: How html code converted into rect
+	https://babeljs.io/repl
+
+
+
+How recat workd 
+
+	React will create virtual dom, light weight in memory component tree
+
+		When react component change, react will update the particular node in virtual dom, then it will compare current version of virtual dom and previouse version of virtual dom
+
+	React dom: will render component tree
+
+		ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+			<React.StrictMode>
+				<App />
+			</Rect.StrictMode>,
+		)
+
+		In mobile app component tree render will differently, we need to use react native library
+
+React is a java script library for building user interfaces.
+
+Library															Framework
+-------															----------
+	A tool that provides specific functionality.					A set of tools and guidelines for building the apps.
+
+
+
+React 
+-----
+Building UI components
+Routing 
+Http
+Managing app state
+Form validation
+
+
+Building components
+-----------------
