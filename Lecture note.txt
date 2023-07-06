@@ -59,5 +59,54 @@ Managing app state
 Form validation
 
 
+Install Bootstrap
+--------------
+https://getbootstrap.com/
+npm i bootstrap@5.3.0
+
+Update the boot strap css path in main.ts file
+import 'bootstrap/dist/css/bootstrap.css'
+
+
 Building components
 -----------------
+
+When copying the components from javas script, esnure 'class' field should change 'className'
+
+Example : <ul className="list-group">
+      <li className="list-group-item">An item</li>
+      <li className="list-group-item">A second item</li>
+    </ul>
+
+    // Sample component
+    function ListGroup() {
+    return (
+        <ul className="list-group">
+            <li className="list-group-item">An item</li>
+            <li className="list-group-item">A second item</li>
+        </ul>
+    );
+    }
+Wrapping the components
+---------------------
+    <div>
+      <h1>Sample List</h1>
+      <ul className="list-group">
+        <li className="list-group-item">An item</li>
+        <li className="list-group-item">A second item</li>
+      </ul>
+    </div>
+In the above exmple with help of div, we are wrapping the mutliple components,
+
+
+Fragments
+    Wrapping the children in to single group, in the above example we are using one extra component for grouping. With Fragment we can avoid exra component
+
+     <Fragment>
+      <h1>Sample List</h1>
+      <ul className="list-group">
+        <li className="list-group-item">An item</li>
+        <li className="list-group-item">A second item</li>
+      </ul>
+    </Fragment>
+
