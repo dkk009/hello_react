@@ -132,3 +132,55 @@ const c = 1
     a == c => true
     a === c => false
 
+
+useState
+--------
+The React useState Hook allows us to track state in a function component.
+import { useState } from "react";
+eg:  const [seletedIndex, setSelectedIndex] = useState(-1);
+
+PROPS                                STATE
+------                              --------
+
+Input passes to a component         Data managed by a component
+Similar to function arg             Similar to local variable
+Immutable                           Mutable
+Cause a re-render                   cause a re-render
+
+
+//Create bootstrap button
+
+Create a component with necessary properties.
+Example:
+    interface Props {
+  children: string;
+  onClick: () => void;
+  color?: string;
+}
+
+Here you can see color is an option parameter
+
+How to set only  defined values for vraibles
+
+color?:'primary'| 'secondary' | 'danger'
+
+Full component
+
+                interface Props {
+  children: string;
+  onClick: () => void;
+  color?: string;
+}
+
+const Button = ({ children, onClick, color = "primary" }: Props) => {
+  return (
+    <button className={"btn btn-" + color} onClick={onClick}>
+      {children}
+    </button>
+  );
+};
+
+export default Button;
+
+
+
